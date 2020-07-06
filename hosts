@@ -1,0 +1,10 @@
+[preprod]
+#localhost ansible_connection=local
+172.31.62.53   ansible_user=centos ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+
+[build]
+172.31.60.90   ansible_user=centos ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+[prod]
+172.31.63.200   ansible_user=centos ansible_ssh_common_args='-o StrictHostKeyChecking=no'
