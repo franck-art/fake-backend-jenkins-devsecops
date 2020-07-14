@@ -25,6 +25,9 @@
         - mysql_data:/var/lib/mysql
       networks:
         - name: network_game
+  - name: sleep for 20 seconds and continue with play
+    wait_for:
+      timeout: 20
 
   tags:
     - preprod
