@@ -71,7 +71,7 @@ pipeline {
                        sh 'ansible-playbook  -i hosts --vault-password-file vault.key --private-key id_rsa --limit build clair-scan.yml'
                    }
 
-
+               }
                 stage("Push on docker hub") {
                    when {
                       expression { GIT_BRANCH == 'origin/dev' }
