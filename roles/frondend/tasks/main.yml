@@ -48,10 +48,18 @@
   docker_image:
     path: "{{ home }}/mini_projet/fake-backend"
     name: "{{ dockerhub_login_vault }}/fake-backend-jenkins_cd"
-    push: yes
     tag: "{{ tag_version }}"
   tags:
     - build
+
+- name: push image into Docker Hub
+  docker_image:
+    path: "{{ home }}/mini_projet/fake-backend"
+    name: "{{ dockerhub_login_vault }}/fake-backend-jenkins_cd"
+    push: yes
+    tag: "{{ tag_version }}"
+  tags:
+    - push
 
 - name: pull an image
   docker_image:

@@ -12,12 +12,12 @@ home: "/home/centos"
 fake_backend_source_branch: "master"
 
 
-repo_fake_backend: "git@github.com:franck-art/fake-backend-dev.git"
+repo_fake_backend: "git@github.com:franck-art/projet_jenkins_fake-backend.git"
 
 tag_version: "jenkins_cd"
 
 branch_clone: "master"
 
-adresse_preprod: "172.31.62.53"
+adresse_preprod: "172.31.51.113"
 
 port_preprod: "80"
